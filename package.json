@@ -1,0 +1,35 @@
+{
+  "name": "aws-elasticsearch",
+  "version": "1.0.0",
+  "description": "Create powerfull search API with NodeJS and AWS Elasticsearch",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "build": "npx tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zuenda25/node-aws-elasticsearch.git"
+  },
+  "author": "Fhomi Zuenda <zuenda25@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zuenda25/node-aws-elasticsearch/issues"
+  },
+  "homepage": "https://github.com/Zuenda25/node-aws-elasticsearch#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.50.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
