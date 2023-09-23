@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
-import ENV_CONFIG from './app/configs/env.config';
-import api from './app/routers/index';
+import ENV_CONFIG from './configs/env.config';
+import api from './routers/index';
 
 const app: Express = express();
 app.use(express.json());

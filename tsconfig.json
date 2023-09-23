@@ -1,20 +1,13 @@
 {
     "compilerOptions": {
-      "outDir": "./dist",
+      "outDir": "./build",
       "target": "es2016",
       "module": "commonjs",
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "paths": {
-        "@configs": ["/app/configs/*"],
-        "@controllers": ["/app/controllers/*"],
-        "@models": ["/app/models/*"],
-        "@routes": ["/app/routes/*"],
-        "@interfaces": ["/app/interfaces/*"],
-        "@helpers": ["/app/helpers/*"],
-      }
+      "baseUrl": "./app/index.ts",
     }
   }
   
