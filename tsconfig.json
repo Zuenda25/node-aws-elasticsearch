@@ -6,7 +6,15 @@
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
+      "forceConsistentCasingInFileNames": true,
+      "paths": {
+        "@configs": ["/app/configs/*"],
+        "@controllers": ["/app/controllers/*"],
+        "@models": ["/app/models/*"],
+        "@routes": ["/app/routes/*"],
+        "@interfaces": ["/app/interfaces/*"],
+        "@helpers": ["/app/helpers/*"],
+      }
     }
   }
   
