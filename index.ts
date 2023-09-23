@@ -7,6 +7,8 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Express + TypeScript Server');
 });
 
+console.log(ENV_CONFIG.app);
+
 app.listen(ENV_CONFIG.app.port, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${ENV_CONFIG.app.port}`);
 });

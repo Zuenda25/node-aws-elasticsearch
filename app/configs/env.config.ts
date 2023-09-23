@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import { Environment } from '../types/common.type';
-import { ObjectMap } from '../interfaces/common.interface';
 
 const env: string = process.env.NODE_ENV!;
 
@@ -21,7 +20,8 @@ const test: Environment = {
   },
 }
 
-const ENV_CONFIG: ObjectMap = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const ENV_CONFIG: any = {
   development: development,
   test: test
 }
